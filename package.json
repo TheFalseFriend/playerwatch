@@ -4,7 +4,8 @@
   "description": "An Overwatch companion service that helps you scope out opponents.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,10 @@
     "url": "https://github.com/TheFalseFriend/playerwatch/issues"
   },
   "homepage": "https://playerwatch.herokuapp.com/",
-  "engines":{
-    "node":"9.0.0"
+  "engines": {
+    "node": "9.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
- 
