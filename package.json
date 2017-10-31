@@ -22,6 +22,6 @@
   },
   "homepage": "https://playerwatch.herokuapp.com/",
   "engines":{
-    "node":"8.8.0"
+    "node":"9.0.0"
   }
 }
