@@ -1,0 +1,27 @@
+{
+  "name": "playerwatch",
+  "version": "0.0.0",
+  "description": "An Overwatch companion service that helps you scope out opponents.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFalseFriend/playerwatch.git"
+  },
+  "keywords": [
+    "overwatch",
+    "helper",
+    "companion"
+  ],
+  "author": "Thomas Cumming",
+  "license": "BSD-3-Clause-Clear",
+  "bugs": {
+    "url": "https://github.com/TheFalseFriend/playerwatch/issues"
+  },
+  "homepage": "https://playerwatch.herokuapp.com/",
+  "engines":{
+    "node":"8.8.0"
+  }
+}
