@@ -27,5 +27,11 @@
   },
   "dependencies": {
     "express": "^4.16.2"
-  }
+  },
+  contributors: [
+    {
+      "name": "Lewis Walker",
+      "email": "Lewis.walker9423@gmail.com"
+    }
+  ]
 }
