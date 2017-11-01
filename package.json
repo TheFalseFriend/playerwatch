@@ -26,8 +26,8 @@
     "node": "9.0.0"
   },
   "dependencies": {
-    "express": "^4.16.2",
-    "wwwhisper":"*"
+    "connect-wwwhisper": "^0.1.19",
+    "express": "^4.16.2"
   },
   "contributors": [
     {
