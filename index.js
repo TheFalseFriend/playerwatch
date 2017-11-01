@@ -10,7 +10,8 @@ app.set('port', (process.env.PORT || 5000));
 //app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.send('blah the second');
+  var environment = process.env.ENV;
+  response.send('blah the second. Here is the env ' + environment);
 });
 
 app.listen(app.get('port'), function() {
