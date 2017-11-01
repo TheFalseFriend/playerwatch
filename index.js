@@ -1,6 +1,12 @@
 var express = require('express');
 var app = express();
 
+// for restricting access to dev and staging sites
+if(process.env === 'dev' || process.env === 'staging') {
+  var wwwhisper = require('connect-wwwhisper');
+  app.use(wwwhisper());
+}
+
 app.set('port', (process.env.PORT || 5000));
 
 //app.use(express.static(__dirname + '/public'));
