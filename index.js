@@ -3,7 +3,7 @@ var wwwhisper = require('connect-wwwhisper');
 var app = express();
 
 // for restricting access to dev and staging sites
-if(process.env.ENV === 'dev' || process.env.ENV === 'staging') {
+if(process.env.ENV !== 'live') {
   app.use(wwwhisper());
 }
 
