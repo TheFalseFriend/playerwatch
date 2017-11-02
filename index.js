@@ -3,9 +3,9 @@ var wwwhisper = require('connect-wwwhisper');
 var app = express();
 
 // for restricting access to dev and staging sites
-//if(process.env === 'dev' || process.env === 'staging') {
-app.use(wwwhisper());
-//}
+if(process.env.ENV === 'dev' || process.env.ENV === 'staging') {
+  app.use(wwwhisper());
+}
 
 app.set('port', (process.env.PORT || 5000));
 
