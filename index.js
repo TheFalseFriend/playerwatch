@@ -4,7 +4,7 @@ var app = express();
 
 // for restricting access to dev and staging sites
 if(process.env.ENV !== 'live') {
-  app.use(wwwhisper());
+    app.use(wwwhisper());
 }
 
 app.set('port', (process.env.PORT || 5000));
@@ -16,8 +16,7 @@ app.set('port', (process.env.PORT || 5000));
 //app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  var environment = process.env.ENV;
-  response.send('blah the fourth!. Here is the env ' + environment);
+	response.send('blablahh the fourth!. Here is the env ' + process.env.ENV);
 });
 
 app.listen(app.get('port'), function() {
